@@ -1,11 +1,7 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: la directory intermedia (obj\x64\Debug\game-premake-main\) contiene file condivisi da un altro progetto (game-premake-main.vcxproj). Tale condizione può comportare un comportamento di pulizia e ricompilazione non corretto.
   main.c
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(105,71): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(106,54): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(107,71): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(108,54): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(68,46): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(68,69): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(69,46): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\Users\filip\OneDrive\project_dama_\project\_build\c file\main.c(69,69): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-  game-premake-main.vcxproj -> C:\Users\filip\OneDrive\project_dama_\project\_bin\Debug\game-premake-main.exe
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(49,41): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(49,78): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(79,33): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(79,52): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+  game-premake-main.vcxproj -> C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_bin\Debug\game-premake-main.exe

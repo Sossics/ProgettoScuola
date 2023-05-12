@@ -1,7 +1,19 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: la directory intermedia (obj\x64\Debug\game-premake-main\) contiene file condivisi da un altro progetto (game-premake-main.vcxproj). Tale condizione può comportare un comportamento di pulizia e ricompilazione non corretto.
   main.c
-C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(49,41): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(49,78): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(79,33): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(79,52): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(55,41): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(55,78): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(88,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(89,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(90,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(99,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(100,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(101,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(134,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(134,49): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(134,52): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(134,64): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(119,42): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(119,45): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(119,48): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_build\c file\main.c(119,60): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
   game-premake-main.vcxproj -> C:\Users\filip\Documents\GitHub\ProgettoScuola\project_dama_\project\_bin\Debug\game-premake-main.exe

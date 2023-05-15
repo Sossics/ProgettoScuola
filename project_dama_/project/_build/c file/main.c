@@ -4,6 +4,8 @@
 
 #define BOARD_SIZE 8
 #define SQUARE_SIZE 64
+#define GIALLASTRO_MARRONCINO CLITERAL(Color){ 230, 180, 100, 255 }
+#define GIALLO_MARRONCINO_CHIARO CLITERAL(Color){ 245, 220, 170, 255 }   // Giallo Marroncino Chiaro
 
 typedef struct {
     struct board {
@@ -41,6 +43,8 @@ typedef struct {
     Color color;
     Color textColor;
     bool clicked;
+    int buttonValue;
+    int mat[8][8];
 } Button;
 
 // Funzione per disegnare un bottone
@@ -73,67 +77,151 @@ void loadTexture() {
     GAME.board.white_place = LoadTexture("img/scacchiera_white.png");
 }
 
+void DrawWhitePawn(int x, int y, int size) {
+    int centerX = x + size / 2;
+    int centerY = y + size / 2;
+    int radius = size / 2 - size / 10; // Dimensione del cerchio esterno
+    int innerRadius = radius - size / 20; // Dimensione del cerchio interno
+
+    DrawCircle(centerX, centerY, radius, WHITE); // Cerchio esterno bianco
+    DrawCircle(centerX, centerY, innerRadius, LIGHTGRAY); // Cerchio interno grigio chiaro
+    DrawCircle(centerX, centerY, innerRadius / 2, WHITE); // Cerchio centrale bianco
+}
+
+void DrawBlackPawn(int x, int y, int size) {
+    int centerX = x + size / 2;
+    int centerY = y + size / 2;
+    int radius = size / 2 - size / 10; // Dimensione del cerchio esterno
+    int innerRadius = radius - size / 20; // Dimensione del cerchio interno
+
+    DrawCircle(centerX, centerY, radius, BLACK); // Cerchio esterno nero
+    DrawCircle(centerX, centerY, innerRadius, GRAY); // Cerchio interno grigio
+    DrawCircle(centerX, centerY, innerRadius / 2, BLACK); // Cerchio centrale nero
+}
+
 void drawBoard() {
+    int boardWidth = BOARD_SIZE * SQUARE_SIZE;
+    int boardHeight = BOARD_SIZE * SQUARE_SIZE;
+    int screenWidth = GetScreenWidth();
+    int screenHeight = GetScreenHeight();
+    int squareSize = screenHeight / (BOARD_SIZE + 2);
+
     for (int row = 0; row < BOARD_SIZE; row++) {
         for (int col = 0; col < BOARD_SIZE; col++) {
-            Vector2 pos = { col * SQUARE_SIZE, row * SQUARE_SIZE };
-
+            int x = (col + 1) * squareSize;
+            int y = (row + 1) * squareSize;
             if ((row + col) % 2 == 0) {
-                DrawTextureEx(GAME.board.white_place, pos, 0.0f, 1.0f, WHITE);
+                DrawRectangle(x, y, squareSize, squareSize, GIALLO_MARRONCINO_CHIARO);
             }
             else {
-                DrawTextureEx(GAME.board.black_place, pos, 0.0f, 1.0f, WHITE);
+                Rectangle buttonRect = { x, y, squareSize, squareSize };
+                int buttonValue = GAME.board.mat[row][col];  // Ottieni il valore corrispondente nella matrice
+
+                if (CheckCollisionPointRec(GetMousePosition(), buttonRect))
+                {
+                    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+                    {
+                        GAME.board.mat[row][col] = buttonValue;
+                        
+                    }
+                    DrawRectangleRec(buttonRect, LIGHTGRAY);
+                }
+                else {
+                    DrawRectangleRec(buttonRect, DARKBROWN);
+                }
+
+                Button button = CreateButton(x, y, squareSize, squareSize, "", 20, BLANK, WHITE);
+                button.buttonValue = buttonValue;
+                DrawButton(button);
             }
 
-            if (GAME.white_pawn_.mat[row][col]) {
-                DrawTextureEx(GAME.white_pawn_.white_pawn, pos, 0.0f, 1.0f, WHITE);
-            }
+            if (GAME.board.mat[row][col] == 1) {
+                int pawnX = x + squareSize / 2 - SQUARE_SIZE + SQUARE_SIZE/4;
+                int pawnY = y + squareSize / 2 - SQUARE_SIZE + SQUARE_SIZE /4;
+                int pawnSize = squareSize;
 
-            if (GAME.black_pawn_.mat[row][col]) {
-                DrawTextureEx(GAME.black_pawn_.black_pawn, pos, 0.0f, 1.0f, WHITE);
+                DrawWhitePawn(pawnX, pawnY, pawnSize);
+            }
+            else if (GAME.board.mat[row][col] == 2) {
+                int pawnX = x + squareSize / 2 - SQUARE_SIZE + SQUARE_SIZE / 4; // Coordinata x per il centro del rettangolo
+                int pawnY = y + squareSize / 2 - SQUARE_SIZE + SQUARE_SIZE / 4; // Coordinata y per il centro del rettangolo
+                int pawnSize = squareSize; // Dimensione della pedina (dimensione del rettangolo)
+
+                DrawBlackPawn(pawnX, pawnY, pawnSize);
             }
         }
     }
 }
 
+
 int main() {
     const int screenWidth = BOARD_SIZE * SQUARE_SIZE;
     const int screenHeight = BOARD_SIZE * SQUARE_SIZE;
 
-    InitWindow(screenWidth, screenHeight, "Chess");
+    InitWindow(screenWidth, screenHeight, "dama");
+    
+    int monitor = GetCurrentMonitor(),
+        monitorWidth = GetMonitorWidth(monitor),
+        monitorHeight = GetMonitorHeight(monitor);
+
+    SetWindowSize(monitorWidth, monitorHeight);
+    ToggleFullscreen();
 
     SetTargetFPS(60);
 
     loadTexture();
 
-    Button vsBotButton = CreateButton(100,
-        100,
-        200, 
-        50, 
-        "vs Bot", 
-        20, 
-        GRAY, 
-        BLACK
-    );
-    Button oneVsOneButton = CreateButton(100, 
-        200, 
-        200, 
-        50, 
-        "1v1", 
-        20, 
-        GRAY, 
-        BLACK
-    );
+    Button vsBotButton = CreateButton(100,100,200, 50, "vs Bot", 20, GRAY, BLACK);
+    Button oneVsOneButton = CreateButton(100, 200, 200, 50, "1v1", 20, GRAY, BLACK);
+
+
+    Image background = LoadImage("img/background.png");
+    Texture2D backgroundTexture = LoadTextureFromImage(background);
+
     GAME.Game_menu = true;
     GAME.game_1v1 = false;
     GAME.game_bot = false;
     GAME.game_run = true;
     GAME.game_over = false;
 
+    for (int i = 0; i < 8; i++) {
+        for(int j = 0; j < 8; j++){
+            GAME.board.mat[i][j] = 0;
+        }
+    }
+
+    GAME.board.mat[0][1] = 1;
+    GAME.board.mat[0][3] = 1;
+    GAME.board.mat[0][5] = 1;
+    GAME.board.mat[0][7] = 1;
+    GAME.board.mat[1][0] = 1;
+    GAME.board.mat[1][2] = 1;
+    GAME.board.mat[1][4] = 1;
+    GAME.board.mat[1][6] = 1;
+    GAME.board.mat[2][1] = 1;
+    GAME.board.mat[2][3] = 1;
+    GAME.board.mat[2][5] = 1;
+    GAME.board.mat[2][7] = 1;
+
+    GAME.board.mat[5][0] = 2;
+    GAME.board.mat[5][2] = 2;
+    GAME.board.mat[5][4] = 2;
+    GAME.board.mat[5][6] = 2;
+    GAME.board.mat[6][1] = 2;
+    GAME.board.mat[6][3] = 2;
+    GAME.board.mat[6][5] = 2;
+    GAME.board.mat[6][7] = 2;
+    GAME.board.mat[7][0] = 2;
+    GAME.board.mat[7][2] = 2;
+    GAME.board.mat[7][4] = 2;
+    GAME.board.mat[7][6] = 2;
+
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(RAYWHITE);
+        DrawTexture(backgroundTexture, 0, 0, WHITE);
         if (GAME.Game_menu == true) {
+            ClearBackground(RAYWHITE);
             DrawButton(vsBotButton);
             DrawButton(oneVsOneButton);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
@@ -145,15 +233,15 @@ int main() {
                 }
                 if (CheckCollisionPointRec(mousePos, oneVsOneButton.rect)) {
                     drawBoard();
-                    GAME.game_bot = true;
+                    GAME.game_1v1 = true;
                     GAME.Game_menu = false;
                 }
             }
         }
-        if (GAME.game_1v1 == true) {
+        if (GAME.game_bot == true) {
             drawBoard();
-        }
 
+        }
         EndDrawing();
     }
 

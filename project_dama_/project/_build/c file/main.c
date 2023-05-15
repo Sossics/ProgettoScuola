@@ -7,8 +7,6 @@
 #define GIALLASTRO_MARRONCINO CLITERAL(Color){ 230, 180, 100, 255 }
 #define GIALLO_MARRONCINO_CHIARO CLITERAL(Color){ 245, 220, 170, 255 }   // Giallo Marroncino Chiaro
 
-
-
 typedef struct {
     struct board {
         int mat[BOARD_SIZE][BOARD_SIZE];
@@ -38,7 +36,6 @@ typedef struct {
     };
 } game;
 
-
 typedef struct {
     Rectangle rect;
     const char* text;
@@ -47,6 +44,7 @@ typedef struct {
     Color textColor;
     bool clicked;
     int buttonValue;
+    int mat[8][8];
 } Button;
 
 // Funzione per disegnare un bottone
@@ -124,6 +122,7 @@ void drawBoard() {
                     if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
                     {
                         GAME.board.mat[row][col] = buttonValue;
+                        
                     }
                     DrawRectangleRec(buttonRect, LIGHTGRAY);
                 }

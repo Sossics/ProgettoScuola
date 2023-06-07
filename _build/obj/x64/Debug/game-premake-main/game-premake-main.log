@@ -1,0 +1,57 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: la directory intermedia (obj\x64\Debug\game-premake-main\) contiene file condivisi da un altro progetto (game-premake-main.vcxproj). Tale condizione può comportare un comportamento di pulizia e ricompilazione non corretto.
+  main.c
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\.h file\functions.h(117,8): warning C4244: 'funzione': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(64,41): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(64,78): warning C4244: 'funzione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(94,38): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(94,41): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(94,44): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(94,56): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(131,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(132,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(133,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(142,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(143,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(144,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(153,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(154,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(155,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(156,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(165,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(166,34): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(167,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(168,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(327,46): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(327,49): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(327,52): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(327,64): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(240,42): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(240,45): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(240,48): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(240,60): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(231,15): warning C4101: 'rectangleResult': variabile locale senza riferimenti
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(369,69): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(369,79): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(369,96): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(386,69): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(386,79): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(386,96): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(402,69): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(402,79): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(402,96): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(418,69): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(418,79): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(418,96): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(458,76): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(458,86): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(458,103): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(459,79): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(459,89): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(459,106): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(460,69): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(460,79): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(460,96): warning C4244: 'funzione': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(529,63): warning C4047: 'funzione': 'int' differisce da 'void *' nei livelli di riferimento indiretto
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(529,59): warning C4024: 'DrawText': tipi diversi tra il parametro 4 formale e quello effettivo
+C:\Users\filip\OneDrive\Desktop\file.dir\project\_build\c file\main.c(70): warning C4716: 'GetIndexesFromPosition': deve restituire un valore
+  game-premake-main.vcxproj -> C:\Users\filip\OneDrive\Desktop\file.dir\project\_bin\Debug\game-premake-main.exe
